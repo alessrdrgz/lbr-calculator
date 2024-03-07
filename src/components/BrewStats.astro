@@ -1,0 +1,63 @@
+---
+import SectionHeader from '@/components/SectionHeader.astro'
+---
+
+<section>
+  <SectionHeader title="Brew stats" image="alchemy" />
+  <table class="table table-zebra table-sm md:table-md">
+    <thead class="[&>tr>th>img]:mx-auto">
+      <th class="text-center text-md">Average</th>
+      <th>
+        <img src="/images/dark-essence.png" alt="Dark Essence" class="size-6 md:size-8" />
+      </th>
+      <th>
+        <img src="/images/shard.png" alt="Shard" class="size-6 md:size-8" />
+      </th>
+      <th>
+        <img src="/images/transformation-shard.png" alt="Transformation Shard" class="size-6 md:size-8" />
+      </th>
+      <th>
+        <img src="/images/fusion-shard.png" alt="Fusion shard" class="size-6 md:size-8" />
+      </th>
+      <th>
+        <img src="/images/ascension-shard.png" alt="Ascension shard" class="size-6 md:size-8" />
+      </th>
+    </thead>
+    <tbody class="*:text-center">
+      <tr>
+        <td>Brew</td>
+        <td><span id="dark-essence-brew">0</span></td>
+        <td><span id="shards-brew">0</span></td>
+        <td><span id="transformation-brew">0</span></td>
+        <td><span id="fusion-brew">0</span></td>
+        <td><span id="ascension-brew">0</span></td>
+      </tr>
+      <tr>
+        <td>Witch kill</td>
+        <td><span id="dark-essence-kill">0</span></td>
+        <td><span id="shards-kill">0</span></td>
+        <td><span id="transformation-kill">0</span></td>
+        <td><span id="fusion-kill">0</span></td>
+        <td><span id="ascension-kill">0</span></td>
+      </tr>
+      <tr>
+        <td>Hour</td>
+        <td><span id="dark-essence-hour">0</span></td>
+        <td><span id="shards-hour">0</span></td>
+        <td><span id="transformation-hour">0</span></td>
+        <td><span id="fusion-hour">0</span></td>
+        <td><span id="ascension-hour">0</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="flex flex-row gap-4 justify-between items-center">
+    <div class="stat">
+      <div class="stat-title text-center">Essences/h</div>
+      <div class="stat-value text-2xl text-center" id="essences-hour">0</div>
+    </div>
+    <div class="stat">
+      <div class="stat-title text-center">Time to fill storage</div>
+      <div class="stat-value text-2xl text-center" id="time-fill-storage">00:00:00</div>
+    </div>
+  </div>
+</section>

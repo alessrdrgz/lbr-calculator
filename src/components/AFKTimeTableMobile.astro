@@ -1,0 +1,93 @@
+---
+import NumericInput from '@/components/NumericInput.astro'
+---
+
+<table class="table table-zebra table-sm md:hidden block">
+  <thead class="[&>tr>th>div>div>img]:mx-auto [&>tr>th>img]:mx-auto">
+    <th></th>
+    <th>
+      <div class="flex flex-col gap-y-1">
+        <div class="flex flex-row gap-x-1">
+          <img class="size-6" src="/images/cosmic-essence.png" alt="Cosmic Essence" />
+          <img class="size-6" src="/images/leaf-essence.png" alt="Leaf Essence" />
+        </div>
+        <div class="flex flex-row gap-x-1">
+          <img class="size-6" src="/images/water-essence.png" alt="Water Essence" />
+          <img class="size-6" src="/images/earth-essence.png" alt="Earth Essence" />
+        </div>
+      </div>
+    </th>
+    <th>
+      <img class="size-8" src="/images/dark-essence.png" alt="Dark Essence" />
+    </th>
+    <th>
+      <img class="size-8" src="/images/shard.png" alt="Shard" />
+    </th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Goal</td>
+      <td>
+        <NumericInput min="0" name="essences-goal" value="0" />
+      </td>
+      <td>
+        <NumericInput min="0" name="dark-essence-goal" value="0" />
+      </td>
+      <td>
+        <NumericInput min="0" name="shards-goal" value="0" />
+      </td>
+    </tr>
+    <tr class="[&>*:not(:first-child)]:text-center">
+      <td> Average time</td>
+      <td>
+        <span class="time-essences">00:00:00</span>
+      </td>
+      <td>
+        <span class="time-dark-essence">00:00:00</span>
+      </td>
+      <td>
+        <span class="time-shards">00:00:00</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table class="table table-zebra table-sm md:hidden block">
+  <thead class="[&>tr>th>div>div>img]:mx-auto [&>tr>th>img]:mx-auto [&>tr>th]:items-end">
+    <th></th>
+    <th>
+      <img class="size-8" src="/images/transformation-shard.png" alt="Transformation shard" />
+    </th>
+    <th>
+      <img class="size-8" src="/images/fusion-shard.png" alt="Fusion shard" />
+    </th>
+    <th>
+      <img class="size-8" src="/images/ascension-shard.png" alt="Ascension shard" />
+    </th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Goal</td>
+      <td>
+        <NumericInput min="0" name="transformation-shards-goal" value="0" />
+      </td>
+      <td>
+        <NumericInput min="0" name="fusion-shards-goal" value="0" />
+      </td>
+      <td>
+        <NumericInput min="0" name="ascension-shards-goal" value="0" />
+      </td>
+    </tr>
+    <tr class="[&>*:not(:first-child)]:text-center">
+      <td>Average time</td>
+      <td>
+        <span class="time-transformation-shards">00:00:00</span>
+      </td>
+      <td>
+        <span class="time-fusion-shards">00:00:00</span>
+      </td>
+      <td>
+        <span class="time-ascension-shards">00:00:00</span>
+      </td>
+    </tr>
+  </tbody>
+</table>

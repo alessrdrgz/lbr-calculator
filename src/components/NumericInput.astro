@@ -1,0 +1,19 @@
+---
+interface Props {
+  value: string
+  min: string
+  max?: string
+  class?: string
+  name: string
+}
+
+const props = Astro.props
+---
+
+<input
+  type="number"
+  autocomplete="off"
+  inputmode="numeric"
+  {...props}
+  class={`input input-sm input-bordered w-full max-w-xs text-center ${props.class}`}
+/>

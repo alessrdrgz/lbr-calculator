@@ -1,0 +1,39 @@
+---
+import NumericInput from '@/components/NumericInput.astro'
+import SectionHeader from '@/components/SectionHeader.astro'
+---
+
+<section class="flex flex-col items-center justify-center gap-8">
+  <SectionHeader title="Player stats" image="player" />
+
+  <article class="grid grid-cols-[repeat(15,_minmax(0,_1fr))] gap-4 md:flex items-end">
+    <div class="col-span-5 md:flex-1 gap-2">
+      <label for="spawn-cd" class="label text-sm block text-center"> Spawn CD (s)</label>
+      <NumericInput min="145" max="180" name="spawn-cd" value="180" />
+    </div>
+    <div class="col-span-5 md:flex-1 gap-2">
+      <label for="essence-kill" class="label text-sm block text-center"> Essence/kill</label>
+      <NumericInput min="0" name="essence-kill" value="0" />
+    </div>
+    <div class="col-span-5 md:flex-1 gap-2">
+      <label for="brew-multi" class="label text-sm block text-center"> Brew multi %</label>
+      <NumericInput min="0" name="brew-multi" value="0" />
+    </div>
+    <div class="col-start-1 col-end-8 md:flex-1 gap-2">
+      <label for="brew-cc" class="label text-sm block text-center"> Brew CC %</label>
+      <NumericInput min="0" max="100" name="brew-cc" value="0" />
+    </div>
+    <div class="col-start-9 col-end-[16] md:flex-1 gap-2">
+      <label for="multi-cc" class="label text-sm block text-center"> Multi CC %</label>
+      <NumericInput min="0" name="multi-cc" value="0" />
+    </div>
+  </article>
+
+  <article class="flex-row items-end flex justify-between w-full">
+    <div class="flex flex-col gap-0 items-center justify-center">
+      <label for="material-storage" class="label text-sm block text-center"> Max material storage</label>
+      <NumericInput min="0" value="0" class="input input-sm input-bordered text-center" name="material-storage" />
+    </div>
+    <button class="btn btn-sm btn-outline btn-primary" id="save-btn">Save stats</button>
+  </article>
+</section>

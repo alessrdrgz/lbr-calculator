@@ -3,7 +3,6 @@
   "overrides": [
     {
       "files": ["*.astro"],
-      // Enable this plugin
       "plugins": ["astro"],
       "env": {
         "node": true,
