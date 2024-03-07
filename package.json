@@ -15,6 +15,7 @@
     "@fontsource-variable/comfortaa": "^5.0.19",
     "astro": "^4.4.11",
     "tailwindcss": "^3.4.1",
+    "tailwindcss-animated": "^1.0.1",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
