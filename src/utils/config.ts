@@ -18,7 +18,7 @@ export const DEFAULT_STATS: Stats = {
 
 export enum BASE_BREW {
   'DARK_ESSENCE' = 5,
-  'SHARDS' = 3,
+  'SHARDS' = 2,
   'SUPERIOR_SHARDS' = 2
 }
 
